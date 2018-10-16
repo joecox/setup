@@ -45,8 +45,10 @@ brew cask install 1password
                   flux \
                   google-chrome \
                   iterm2 \
+                  kap \
                   keybase \
                   postico \
+                  shiftit \
                   spotify \
                   visual-studio-code
 
