@@ -40,10 +40,13 @@ brew install emacs \
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
 # Install brew-cask things
-brew cask install docker \
+brew cask install 1password
+                  docker \
                   flux \
+                  google-chrome \
                   iterm2 \
-                  keybase
+                  keybase \
+                  spotify
 
 # TODO: setup z caveats in zshrc
 # TODO: setup new ssh key with github
