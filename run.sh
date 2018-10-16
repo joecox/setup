@@ -50,6 +50,7 @@ brew cask install 1password
                   postico \
                   shiftit \
                   spotify \
+                  teensy \ # for keyboard configuration
                   visual-studio-code
 
 # vscode configuration setup
