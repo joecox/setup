@@ -49,5 +49,8 @@ brew cask install 1password
                   spotify \
                   visual-studio-code
 
+# vscode configuration setup
+curl -fsSL https://raw.githubusercontent.com/joecox/setup/master/vscode/settings.json > ~/Library/Application\ Support/Code/User/settings.json
+
 # TODO: setup z caveats in zshrc
 # TODO: setup new ssh key with github
