@@ -46,6 +46,7 @@ brew cask install 1password
                   google-chrome \
                   iterm2 \
                   keybase \
+                  postico \
                   spotify \
                   visual-studio-code
 
