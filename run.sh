@@ -46,7 +46,8 @@ brew cask install 1password
                   google-chrome \
                   iterm2 \
                   keybase \
-                  spotify
+                  spotify \
+                  visual-studio-code
 
 # TODO: setup z caveats in zshrc
 # TODO: setup new ssh key with github
