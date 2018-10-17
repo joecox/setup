@@ -25,6 +25,7 @@ curl -fsSL https://raw.githubusercontent.com/joecox/setup/master/com.googlecode.
 brew install gnu-sed --with-default-names
 brew install emacs \
              git \
+             git-flow \
              gnupg \
              gzip \
              jq \
