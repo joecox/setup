@@ -57,7 +57,7 @@ user_agrees "Install cocoapods?" && brew install cocoapods
 echo "Installing applications ..."
 user_agrees "Install 1Password.app?" && brew cask install 1password
 user_agrees "Install Docker.app?"    && brew cask install docker
-user_agrees "Install DevDocs.pp?"    && brew cask install devdocs
+user_agrees "Install DevDocs.app?"   && brew cask install devdocs
 user_agrees "Install Chrome.app?"    && brew cask install google-chrome
 user_agrees "Install iTerm2.app?"    && brew cask install iterm2
 user_agrees "Install Kap.app?"       && brew cask install kap
