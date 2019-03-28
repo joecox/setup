@@ -37,6 +37,7 @@ fi
 set +e
 # Install brew tools
 user_agrees "Install bash?"      && brew install bash
+user_agrees "Install emacs?"     && brew install emacs
 user_agrees "Install git?"       && brew install git
 user_agrees "Install git-flow?"  && brew install git-flow
 user_agrees "Install asdf?"      && brew install asdf
