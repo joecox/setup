@@ -51,6 +51,7 @@ user_agrees "Install pstree?"    && brew install pstree
 user_agrees "Install gnu-sed?"   && brew install gnu-sed
 user_agrees "Install gzip?"      && brew install gzip
 user_agrees "Install jq?"        && brew install jq
+user_agrees "Install cocoapods?" && brew install cocoapods
 
 # brew cask
 echo "Installing applications ..."

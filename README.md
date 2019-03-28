@@ -1,7 +1,6 @@
 ## Usage
 ```
-curl -sSfLO https://raw.githubusercontent.com/joecox/setup/master/mac
-bash mac
+bash <(curl -sSfL https://raw.githubusercontent.com/joecox/setup/master/mac)
 ```
 
 ## TODO
