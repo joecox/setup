@@ -48,14 +48,14 @@ user_agrees "Install z?"         && brew install z
 user_agrees "Install ripgrep?"   && brew install ripgrep
 user_agrees "Install tree?"      && brew install tree
 user_agrees "Install pstree?"    && brew install pstree
-user_agrees "Install gnu-sed?"   && brew install gnu-sed --with-default-names
+user_agrees "Install gnu-sed?"   && brew install gnu-sed
 user_agrees "Install gzip?"      && brew install gzip
 user_agrees "Install jq?"        && brew install jq
 
 # brew cask
+echo "Installing applications ..."
 user_agrees "Install 1password?"          && brew cask install 1password
 user_agrees "Install docker?"             && brew cask install docker
-user_agrees "Install flux?"               && brew cask install flux
 user_agrees "Install google-chrome?"      && brew cask install google-chrome
 user_agrees "Install iterm2?"             && brew cask install iterm2
 user_agrees "Install kap?"                && brew cask install kap
@@ -83,13 +83,15 @@ if user_agrees "Install zsh/oh-my-zsh/change shell to zsh?" ; then
 fi
 
 set +e
+echo "Adding asdf plugins ..."
 # shellcheck disable=SC1090
 source "$(brew --prefix asdf)/asdf.sh"
 asdf plugin-add nodejs
 asdf plugin-add ruby
 
+set -e
 if user_agrees "Download dotfiles and sync?" ; then
-  git clone https://github.com/joecox/dotfiles > ~/.dotfiles
+  git clone https://github.com/joecox/dotfiles ~/.dotfiles
   rcup -v -x com.googlecode.iterm2.plist -x vscode-settings.json
 
   defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles"
