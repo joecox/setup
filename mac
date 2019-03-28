@@ -55,18 +55,18 @@ user_agrees "Install cocoapods?" && brew install cocoapods
 
 # brew cask
 echo "Installing applications ..."
-user_agrees "Install 1password?"          && brew cask install 1password
-user_agrees "Install docker?"             && brew cask install docker
-user_agrees "Install devdocs app?"        && brew cask install devdocs
-user_agrees "Install google-chrome?"      && brew cask install google-chrome
-user_agrees "Install iterm2?"             && brew cask install iterm2
-user_agrees "Install kap?"                && brew cask install kap
-user_agrees "Install keybase?"            && brew cask install keybase
-user_agrees "Install postico?"            && brew cask install postico
-user_agrees "Install shiftit?"            && brew cask install shiftit
-user_agrees "Install spotify?"            && brew cask install spotify
-user_agrees "Install teensy?"             && brew cask install teensy
-user_agrees "Install visual-studio-code?" && brew cask install visual-studio-code
+user_agrees "Install 1Password.app?" && brew cask install 1password
+user_agrees "Install Docker.app?"    && brew cask install docker
+user_agrees "Install DevDocs.pp?"    && brew cask install devdocs
+user_agrees "Install Chrome.app?"    && brew cask install google-chrome
+user_agrees "Install iTerm2.app?"    && brew cask install iterm2
+user_agrees "Install Kap.app?"       && brew cask install kap
+user_agrees "Install Keybase.app?"   && brew cask install keybase
+user_agrees "Install Postico.app?"   && brew cask install postico
+user_agrees "Install ShiftIt.app?"   && brew cask install shiftit
+user_agrees "Install Spotify.app?"   && brew cask install spotify
+user_agrees "Install Teensy.app?"    && brew cask install teensy
+user_agrees "Install VSCode.app?"    && brew cask install visual-studio-code
 
 set -e
 # Install zsh/oh-my-zsh
