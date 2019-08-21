@@ -2,7 +2,8 @@ name: Pull Request Checks
 
 on:
   push:
-    - !refs/pull/*
+    branches:
+      - !refs/pull/*
 
 jobs:
   build:
