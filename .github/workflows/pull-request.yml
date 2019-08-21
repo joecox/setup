@@ -1,0 +1,16 @@
+name: Pull Request Checks
+
+on:
+  push:
+    - !refs/pull/*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: install shellcheck
+      run: apt upgrade -y && apt install -y shellcheck
+    - name: shellcheck
+      run: shellcheck ./mac
