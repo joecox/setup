@@ -1,0 +1,13 @@
+name: setup-tests
+on: push
+jobs:
+  test-setup:
+    runs-on: macos-10.15
+    steps:
+      - uses: actions/checkout@v2
+      - name: build
+        run: go build mac.go
+      - name: run
+        run: ./mac
+      - name: test
+        run: defaults read com.apple.dock autohide
