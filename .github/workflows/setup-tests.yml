@@ -11,3 +11,5 @@ jobs:
         run: ./mac
       - name: test
         run: defaults read com.apple.dock autohide
+      - run: ls -alg /usr/local/Cellar
+      - run: whoami
