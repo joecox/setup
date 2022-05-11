@@ -45,13 +45,18 @@ brew install ripgrep
 brew install tree
 brew install pstree
 brew install gzip
+brew install jq
+brew install gh
 ```
 
 #### Brew Cask Install
 ```
 brew tap homebrew/cask-drivers && brew install logitech-options
 brew install --cask iterm2
-brew install --cask shiftit
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask 1password
+brew install --cask rectangle
 brew install --cask spotify
 brew install --cask visual-studio-code
 ```
