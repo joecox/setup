@@ -54,6 +54,7 @@ brew install git-delta
 ```
 brew tap homebrew/cask-drivers && brew install logitech-options
 brew install --cask iterm2
+brew install --cask ghostty
 brew install --cask google-chrome
 brew install --cask firefox
 brew install --cask 1password
