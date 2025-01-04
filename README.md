@@ -57,6 +57,7 @@ brew install --cask google-chrome
 brew install --cask firefox
 brew install --cask 1password
 brew install --cask rectangle
+brew install --cask clocker
 brew install --cask spotify
 brew install --cask visual-studio-code
 ```
@@ -78,7 +79,7 @@ mkdir -p ~/Library/Application\ Support/Code/User/
 ln -s ~/.dotfiles/vscode-settings.json ~/Library/Application\ Support/Code/User/settings.json
 ```
 
-#### Chrome
+#### Browser
 * Install [JSON Formatter](https://github.com/callumlocke/json-formatter)
 * Install [uBlock Origin](https://github.com/gorhill/uBlock)
 * Install [Vimium](https://github.com/philc/vimium)
