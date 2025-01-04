@@ -47,6 +47,7 @@ brew install pstree
 brew install gzip
 brew install jq
 brew install gh
+brew install git-delta
 ```
 
 #### Brew Cask Install
