@@ -36,30 +36,28 @@ brew analytics off
 
 #### Brew Install
 ```
-brew install bash
-brew install zsh
-brew install emacs
-brew install git
-brew install ripgrep
-brew install tree
-brew install pstree
-brew install jq
-brew install gh
-brew install git-delta
+brew install git \
+             gh \
+             git-delta \
+             ripgrep \
+             jq \
+             fd \
+             sd \
+             hexyl \
+             tree \
+             pstree
 ```
 
 #### Brew Cask Install
 ```
-brew install --cask 1password
-
-brew install --cask ghostty
-brew install --cask visual-studio-code
-brew install --cask rectangle
-brew install --cask clocker
-
-brew install --cask google-chrome
-brew install --cask firefox
-brew install --cask spotify
+brew install --cask 1password \
+                    ghostty \
+                    visual-studio-code \
+                    rectangle \
+                    clocker \
+                    google-chrome \
+                    firefox \
+                    spotify
 
 brew tap homebrew/cask-drivers && brew install logitech-options
 ```
@@ -85,6 +83,8 @@ ln -s ~/.dotfiles/vscode-settings.json ~/Library/Application\ Support/Code/User/
 
 # Add empty .zshrc-local for computer-specific stuff (loaded in .zshrc)
 touch ~/.zshrc-local
+
+ln -s ~/.dotfiles/hushlogin "$HOME/.hushlogin"
 ```
 
 #### Browser
