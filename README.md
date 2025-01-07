@@ -44,6 +44,8 @@ brew install git \
              fd \
              sd \
              hexyl \
+             expect \  # for unbuffer
+             coreutils \ # for GNU ls and others
              tree \
              pstree
 ```
