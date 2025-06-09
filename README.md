@@ -92,6 +92,12 @@ touch ~/.zshrc-local
 ln -s ~/.dotfiles/hushlogin "$HOME/.hushlogin"
 ```
 
+#### AWS Setup
+```
+brew install awscli
+aws configure
+```
+
 #### Browser
 * Install [JSON Formatter](https://github.com/callumlocke/json-formatter)
 * Install [uBlock Origin](https://github.com/gorhill/uBlock)
