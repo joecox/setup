@@ -85,6 +85,7 @@ ln -s ~/.dotfiles/ghostty-themes/quiet-light "$XDG_CONFIG_HOME/ghostty/themes/qu
 
 mkdir -p ~/Library/Application\ Support/Code/User/
 ln -s ~/.dotfiles/vscode-settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/.dotfiles/vscode-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
 # Add empty .zshrc-local for computer-specific stuff (loaded in .zshrc)
 touch ~/.zshrc-local
