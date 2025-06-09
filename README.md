@@ -52,16 +52,15 @@ brew install git \
 
 #### Brew Cask Install
 ```
-brew install --cask 1password \
-                    ghostty \
-                    visual-studio-code \
-                    rectangle \
-                    clocker \
-                    google-chrome \
-                    firefox \
-                    spotify
-
-brew tap homebrew/cask-drivers && brew install logitech-options
+brew install 1password \
+             ghostty \
+             visual-studio-code \
+             rectangle \
+             clocker \
+             google-chrome \
+             firefox \
+             spotify \
+             logitech-options
 ```
 
 #### Dotfiles
