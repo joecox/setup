@@ -34,7 +34,7 @@ For Mac
 brew analytics off
 ```
 
-#### Brew Install
+#### Brew CLI Tools
 ```
 brew install git \
              gh \
@@ -50,7 +50,7 @@ brew install git \
              pstree
 ```
 
-#### Brew Cask Install
+#### Brew Apps
 ```
 brew install 1password \
              ghostty \
@@ -61,6 +61,10 @@ brew install 1password \
              firefox \
              spotify \
              logitech-options
+
+# if needed
+brew install slack
+brew install --cask docker
 ```
 
 #### Dotfiles
