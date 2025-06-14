@@ -4,12 +4,13 @@ For Mac
 * Show battery with percentage
 * General:
   * Appearance: Auto
-* Dock:
+* Desktop & Dock:
   * Magnification: Off
   * Minimize: Scale effect
   * Minimize into app icon: On
   * Auto hide dock: On
   * Show recent apps: Off
+  * Hot Corners - off
 * Bluetooth
   * Show in menu bar
 * Trackpad
