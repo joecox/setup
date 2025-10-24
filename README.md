@@ -75,6 +75,9 @@ gh repo clone https://github.com/joecox/dotfiles ~/.dotfiles
 ln -s ~/.dotfiles/zshrc ~/.zshrc
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 
+mkdir -p ~/.zsh/functions
+cp ~/.dotfiles/manydots-magic ~/.zsh/functions/
+
 source ~/.zshrc
 
 mkdir -p "$XDG_CONFIG_HOME"
