@@ -24,6 +24,7 @@ For Mac
 * Date and Time
   * Clock: Show day of week: On
   * Clock: Show date: On
+* Keyboard > Input sources > Add period with double-space: Off
 
 
 ### Dev Environment
