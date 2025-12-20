@@ -63,12 +63,12 @@ brew install fish \
 brew install 1password \
              ghostty \
              visual-studio-code \
+             zed \
              rectangle \
              clocker \
              google-chrome \
              firefox \
              spotify \
-             logitech-options
 
 # if needed
 brew install slack
