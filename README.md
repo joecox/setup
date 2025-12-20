@@ -28,6 +28,7 @@ For Mac
 
 
 ### Dev Environment
+
 #### Install Homebrew
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -36,9 +37,14 @@ For Mac
 brew analytics off
 ```
 
+```
+mkdir -p "$XDG_CONFIG_HOME"
+```
+
 #### Brew CLI Tools
 ```
-brew install git \
+brew install fish \
+             git \
              gh \
              git-delta \
              ripgrep \
@@ -69,19 +75,19 @@ brew install slack
 brew install --cask docker
 ```
 
+#### Shell
+```
+echo "$(which fish)" | sudo tee -a /etc/shells
+chsh -s $(which fish)
+```
+
 #### Dotfiles
 ```
 # clone dotfiles
 gh repo clone https://github.com/joecox/dotfiles ~/.dotfiles
-ln -s ~/.dotfiles/zshrc ~/.zshrc
+ln -s ~/.dotfiles/config.fish ~/.config/fish/config.fish
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 
-mkdir -p ~/.zsh/functions
-cp ~/.dotfiles/manydots-magic ~/.zsh/functions/
-
-source ~/.zshrc
-
-mkdir -p "$XDG_CONFIG_HOME"
 mkdir -p "$XDG_CONFIG_HOME/ghostty/"
 ln -s ~/.dotfiles/ghostty-config "$XDG_CONFIG_HOME/ghostty/config"
 
@@ -92,10 +98,10 @@ mkdir -p ~/Library/Application\ Support/Code/User/
 ln -s ~/.dotfiles/vscode-settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s ~/.dotfiles/vscode-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
-# Add empty .zshrc-local for computer-specific stuff (loaded in .zshrc)
-touch ~/.zshrc-local
+# TODO: fish conf.d files
 
-ln -s ~/.dotfiles/hushlogin "$HOME/.hushlogin"
+# Gets rid of the "last login" message
+touch "$HOME/.hushlogin"
 ```
 
 #### AWS Setup
