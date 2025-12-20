@@ -85,7 +85,10 @@ chsh -s $(which fish)
 ```
 # clone dotfiles
 gh repo clone https://github.com/joecox/dotfiles ~/.dotfiles
-ln -s ~/.dotfiles/config.fish ~/.config/fish/config.fish
+ln -s ~/.dotfiles/fish/config.fish ~/.config/fish/config.fish
+ln -s ~/.dotfiles/fish/functions/* ~/.config/fish/functions/
+ln -s ~/.dotfiles/fish/completions/* ~/.config/fish/completions/
+
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 
 mkdir -p "$XDG_CONFIG_HOME/ghostty/"
