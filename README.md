@@ -101,6 +101,9 @@ mkdir -p ~/Library/Application\ Support/Code/User/
 ln -s ~/.dotfiles/vscode-settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s ~/.dotfiles/vscode-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
+ln -s ~/.dotfiles/zed/settings.json ~/.config/zed/settings.json
+ln -s ~/.dotfiles/zed/keymap.json ~/.config/zed/keymap.json
+
 # TODO: fish conf.d files
 
 # Gets rid of the "last login" message
