@@ -37,8 +37,10 @@ For Mac
 brew analytics off
 ```
 
+#### Misc
 ```
 mkdir -p "$XDG_CONFIG_HOME"
+cp /System/Applications/Utilities/Terminal.app/Contents/Resources/Fonts/* ~/Library/Fonts/
 ```
 
 #### Brew CLI Tools
@@ -93,6 +95,8 @@ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 
 mkdir -p "$XDG_CONFIG_HOME/ghostty/"
 ln -s ~/.dotfiles/ghostty-config "$XDG_CONFIG_HOME/ghostty/config"
+# rm default ghostty config file if exists
+rm ~/Library/Application\ Support/com.mitchellh.ghostty/config
 
 mkdir -p "$XDG_CONFIG_HOME/ghostty/themes"
 ln -s ~/.dotfiles/ghostty-themes/quiet-light "$XDG_CONFIG_HOME/ghostty/themes/quiet-light"
