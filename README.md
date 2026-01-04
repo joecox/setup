@@ -57,7 +57,8 @@ brew install fish \
              expect \
              coreutils \
              tree \
-             pstree
+             pstree \
+             dog
 ```
 
 #### Brew Apps
