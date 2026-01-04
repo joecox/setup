@@ -58,7 +58,7 @@ brew install fish \
              coreutils \
              tree \
              pstree \
-             dog
+             doggo
 ```
 
 #### Brew Apps
