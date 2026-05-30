@@ -61,6 +61,8 @@ brew install fish \
              doggo
 ```
 
+bttf: https://github.com/BurntSushi/bttf/releases
+
 #### Brew Apps
 ```
 brew install 1password \
