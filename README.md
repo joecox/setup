@@ -49,10 +49,12 @@ brew install fish \
              git \
              gh \
              git-delta \
+             mise \
              ripgrep \
              jq \
              fd \
              sd \
+             bat \
              hexyl \
              expect \
              coreutils \
@@ -74,10 +76,8 @@ brew install 1password \
              google-chrome \
              firefox \
              spotify \
-
-# if needed
-brew install slack
-brew install --cask docker
+             slack \
+             docker
 ```
 
 #### Shell
@@ -88,33 +88,13 @@ chsh -s $(which fish)
 
 #### Dotfiles
 ```
-# clone dotfiles
-gh repo clone https://github.com/joecox/dotfiles ~/.dotfiles
-ln -s ~/.dotfiles/fish/config.fish ~/.config/fish/config.fish
-ln -s ~/.dotfiles/fish/functions/* ~/.config/fish/functions/
-ln -s ~/.dotfiles/fish/completions/* ~/.config/fish/completions/
+# if a work computer
+git config --file ~/.gitconfig.local user.email <work-email>
 
-ln -s ~/.dotfiles/gitconfig ~/.gitconfig
-
-mkdir -p "$XDG_CONFIG_HOME/ghostty/"
-ln -s ~/.dotfiles/ghostty-config "$XDG_CONFIG_HOME/ghostty/config"
-# rm default ghostty config file if exists
-rm ~/Library/Application\ Support/com.mitchellh.ghostty/config
-
-mkdir -p "$XDG_CONFIG_HOME/ghostty/themes"
-ln -s ~/.dotfiles/ghostty-themes/quiet-light "$XDG_CONFIG_HOME/ghostty/themes/quiet-light"
-
-mkdir -p ~/Library/Application\ Support/Code/User/
-ln -s ~/.dotfiles/vscode-settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -s ~/.dotfiles/vscode-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-
-ln -s ~/.dotfiles/zed/settings.json ~/.config/zed/settings.json
-ln -s ~/.dotfiles/zed/keymap.json ~/.config/zed/keymap.json
-
-# TODO: fish conf.d files
-
-# Gets rid of the "last login" message
-touch "$HOME/.hushlogin"
+mise bootstrap \
+     --from 'https://github.com/joecox/dotfiles' \
+     --from-dir ~/.dotfiles \
+     --config-dir mise
 ```
 
 #### AWS Setup
